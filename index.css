@@ -1,0 +1,2611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    /* background-color: rgb(48 65 62 / 48%); */
+    background-color: white;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(4, 4, 44);
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: serif;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #6b0652;
+    color: white;
+    transition: all 1s ease;
+}
+
+a.active {
+    background-color: #6b0652;
+    color: white;
+}
+
+
+a:hover {
+    background-color: #6b0652;
+    color: white;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 20px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    color: rgb(0, 0, 0);
+}
+
+
+#check {
+    display: none;
+}
+
+.logo img {
+    margin-top: -4%;
+    height: 200px;
+    cursor: pointer;
+}
+
+#find {
+    height: 40px;
+    width: 25%;
+    margin-left: -98%;
+    border-radius: 90px;
+    border: 1px solid black;
+
+}
+
+input::placeholder {
+    color: black;
+    padding-left: 5%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input {
+    font-size: 20px;
+
+
+}
+
+.ri-search-line {
+    margin-top: 1%;
+    margin-left: -5.5%;
+    font-size: 20px;
+}
+
+
+#l{
+    height: 30px;
+    width: 100%;
+    /* margin-left: 265%; */
+    background-color: #6b0652;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-family: serif;
+    /* border-radius: 10px; */
+
+}
+
+#l:hover{
+    background-color:transparent;
+    border: none;
+    color: white;
+    height: 30px;
+    transition: all 2s ease;
+    cursor: pointer;
+}
+
+#si:hover{
+    background-color:transparent;
+    border: none;
+    color: white;
+}
+
+#si{
+    /* margin-left: 365%; */
+    height: 30px;
+    width: 100%;
+    border: 1px solid white;
+    background-color: #6b0652;
+    color: white;
+    cursor: pointer;
+    font-family: serif;
+    transition: all 2s ease;
+
+}
+
+
+
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: serif;
+    font-weight: bold;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #d6d1d1;
+    font-weight: bold;
+    font-family: serif;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn{
+    border-radius: 10px;
+}
+.dropdown:hover .dropbtn {
+    background-color: #6b0652;
+    color: white;
+    transition: all 1s ease;
+
+}
+
+
+
+.bg {
+
+    height: 89vh;
+    width: 100%;
+    /* filter: blur(3px); */
+    background-image: url(https://media.istockphoto.com/id/1436136372/photo/shopping-mall-clothing-store.jpg?s=1024x1024&w=is&k=20&c=XKGPy8mYrKIucspHf0WLYhy9hIr3kY_sqszygbmnMug=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+}
+
+#b{
+    height: 30px;
+    width: 10%;
+    margin-left: 30%;
+    margin-top: 19%;
+    font-size: 15px;
+    background-color:black;
+    color: white;
+    border: 1px solid rgb(182, 175, 175);
+    cursor: pointer;
+}
+#b:hover{
+    background-color:white;
+    color: black;
+}
+#b i{
+    margin-top: -4%;
+    font-size: 20px;
+    margin-left: -8%;
+}
+.z{
+    position: relative;
+    top: 40%;
+    left: 20%;
+    height: 20vh;
+    width: 40%;
+    /* border: 1px solid white; */
+}
+#my{
+    color: rgb(177, 177, 177);
+    font-size: 70px;
+
+}
+span{
+    color: white;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.type {
+    position: relative;
+    height: 200px;
+    width: 15%;
+    /* border: 2px solid black; */
+    margin-left: 50%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    ;
+    /* grid-gap:2rem; */
+}
+
+#men {
+    background-image: url(image/men.png);
+    background-size: cover;
+    top: 43%;
+    right: 20%;
+
+    border: 2px solid white;
+    /* border-radius: 20px; */
+}
+
+#women {
+    background-image: url(image/women.png);
+    background-size: cover;
+    left: 8%;
+    bottom: 5%;
+
+    border: 2px solid white;
+    /* border-radius: 20px; */
+}
+
+#kid {
+    background-image: url(image/kid.png);
+    background-size: cover;
+    bottom: 36%;
+    left: 29%;
+    border: 2px solid white;
+    /* border-radius: 20px; */
+}
+
+.type:hover {
+    box-shadow: 2px 2px 50px white;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+
+
+p {
+    height: 30px;
+    width: 15%;
+    margin-top: 2%;
+    margin-left: 40%;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #6b0652;
+    text-align: center;
+    padding-top: 0.3%;
+    border-radius: 30px;
+    color: white;
+}
+
+
+
+.men {
+  
+    height: 70vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(Auto-fit, minmax(250px, 1fr));
+
+}
+
+.m {
+    background-color: white;
+    height: 40vh;
+    width: 70%;
+    /* border: 1px solid rgb(117, 117, 117); */
+    margin-top: 20%;
+    margin-left: 18%;
+    padding: 34px;
+    /* background-color: rgb(238, 238, 238); */
+
+}
+
+.f {
+    height: 70vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(Auto-fit, minmax(250px, 1fr));
+
+}
+
+#M img {
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -5%;
+}
+
+#M1 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -19%;
+}
+
+#M2 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -7%;
+}
+
+#M3 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -10%;
+}
+
+#M4 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -7%;
+}
+
+pre {
+    font-weight: bolder;
+    font-size: 15px;
+    color:black;
+    margin-left: -70%;
+    /* font-family:'Courier New', Courier, monospace; */
+}
+
+#ad {
+    height: 20px;
+    width: 70%;
+    position: relative;
+    bottom: 8%;
+    right: 25%;
+    font-size: 8px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#bu {
+
+    height: 20px;
+    width: 70%;
+    position: relative;
+    bottom: 20%;
+    left: 55%;
+    font-size: 8px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#ad:hover {
+    background-color: #6b0652;
+
+}
+
+#bu:hover {
+    background-color: #6b0652;
+}
+
+h2 {
+    font-family: 'Calligraffitti', cursive;
+    text-shadow: 2px 2px 10px black;
+    margin-left: 40%;
+    color:#6b0652;
+}
+
+#add {
+    height: 50vh;
+    background-image: url(image/add.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+#add1 {
+    height: 50vh;
+    background-image: url(image/add1.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+#add2 {
+    height: 50vh;
+    background-image: url(image/add2.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+#add:hover {
+    box-shadow: 2px 2px 40px black;
+    transform: rotateX(360deg);
+    transition: all 4s ease;
+}
+
+#add1:hover {
+    box-shadow: 2px 2px 40px black;
+    transform: rotate(360deg);
+    transition: all 4s ease;
+}
+
+#add2:hover {
+    box-shadow: 2px 2px 40px black;
+    transform: rotateY(360deg);
+    transition: all 4s ease;
+}
+
+#adb {
+
+    height: 20px;
+    width: 30%;
+    font-size: 10px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-top: 94%;
+    margin-left: 36%;
+    border-radius: 20px;
+}
+
+#ad1b {
+    height: 20px;
+    width: 30%;
+    font-size: 10px;
+    color: white;
+    border: 1px solid white;
+    background-color: #6b0652;
+    margin-top: 92%;
+    margin-left: 36%;
+    border-radius: 20px;
+}
+
+#adb:hover {
+    background-color: #6b0652;
+
+}
+
+#ad1b:hover {
+    background-color: palevioletred;
+
+}
+
+#M5 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -5%;
+}
+
+#M6 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -5%;
+}
+
+#M7 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -10%;
+}
+
+#M8 img {
+    cursor: pointer;
+    height: 12vh;
+    margin-top: 5%;
+    margin-left: -15%;
+}
+
+#M9 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -9%;
+}
+
+
+#wsu {
+    margin-top: 40%;
+    margin-left: -100%;
+}
+
+
+#M10 img {
+    cursor: pointer;
+    height: 20vh;
+    margin-top: 2%;
+    margin-left: -5%;
+}
+
+#M11 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -5%;
+}
+
+#M12 img {
+    cursor: pointer;
+    height: 20vh;
+    margin-top: 2%;
+    margin-left: -5%;
+}
+
+#M13 img {
+    cursor: pointer;
+    height: 20vh;
+    margin-top: 2%;
+    margin-left: -20%;
+}
+
+
+#M14 img {
+    cursor: pointer;
+    height: 25vh;
+    margin-top: -25%;
+    margin-left: -5%;
+}
+
+
+#kw {
+    margin-left: -90%;
+}
+
+.l {
+    background-color: rgb(240, 234, 234);
+    width: 60%;
+    margin-top: 40%;
+    height: 100vh;
+    display: flex;
+    border-radius: 90px;
+    margin-top: 1%;
+    margin-left: 20%;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 50px black;
+
+}
+
+#last {
+    border: 1px solid white;
+    box-shadow: 2px 2px 30px black;
+    border-radius: 0px;
+    margin-top: -20%;
+    height: 90vh;
+    margin-top: 5%;
+    background-image: url(image/last.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+#last:hover {
+    transform: scale(0.85);
+    transition: all 3s ease;
+}
+
+.l:hover {
+    background-color:white;
+    border: none;
+    box-shadow: none;
+}
+
+hr{
+    color: black;
+    margin-top: 1%;
+}
+.footer {
+    margin-top: 2%;
+    background-color:white;
+    height: 40vh;
+    width: 100%;
+}
+
+.foo {
+    height: 20vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(Auto-fit, minmax(250px, 1fr));
+
+}
+
+.fo {
+    height: 20vh;
+    width: 70%;
+    /* border: 1px solid white;  */
+    margin-top: -10%;
+    margin-left: 18%;
+    padding: 34px;
+    cursor: pointer;
+}
+
+.fo img {
+    cursor: pointer;
+}
+
+
+.fo1 {
+    height: 10vh;
+    width: 70%;
+    /* border: 1px solid white;  */
+    margin-top: 10%;
+    margin-left: 29%;
+    padding: 34px;
+
+}
+#list{
+    margin-left: -55%;
+}
+
+h4 {
+    margin-top: 15%;
+    color:black;
+    /* text-align: center; */
+    margin-bottom: 5%;
+    cursor: pointer;
+
+}
+
+.fo1 a {
+    font-size: 40px;
+    color:black;
+    padding-left: 20px;
+    /* border: 1px solid white;  */
+    border-radius: 40px;
+
+    /* background-color: white; */
+}
+
+h5 {
+    color:black;
+    width: 80%;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    margin-left: 9%;
+
+
+}
+
+.fo1 a:hover {
+    background-color:#bbb9b9;
+}
+
+.fo a {
+
+    color:black;
+}
+
+.fo a:hover {
+
+    color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1040px) {
+
+    /* nav{
+        margin-top: -5%;
+    } */
+    nav ul {
+        float: right;
+        margin-right: -254px;
+    }
+
+    .logo img {
+        margin-top: -6%;
+        margin-left: -2%;
+    }
+
+    #find {
+        width: 26%;
+        margin-left: -98%;
+    }
+    #si {
+        margin-left: -154%;
+        }
+     #l{
+        margin-left: 153%;
+     }   
+
+    .bg {
+        height: 80vh;
+        margin-top: 5%;
+    }
+    .z{top: 23%;}
+#b{
+    width: 13%;
+}
+    #men {
+        height: 153px;
+        top: 32%;
+        left: -27%;
+    }
+
+    #women {
+        height: 153px;
+        left: -4%;
+        bottom: 27%;
+    }
+
+    #kid {
+        height: 153px;
+        bottom: 69%;
+        left: 12%;
+    }
+
+    .men {
+        height: 113vh;
+    }
+
+    .m {
+        margin-left: 11%;
+    }
+
+    #M img {
+        height: 25vh;
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M1 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M2 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M3 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M4 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M5 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M6 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M7 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M8 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M9 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M10 img {
+        margin-top: 0%;
+        margin-left: 15%;
+    }
+
+    #M11 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    #M12 img {
+        margin-top: 0%;
+        margin-left: 15%;
+    }
+
+    #M13 img {
+        margin-top: 0%;
+        margin-left: 15%;
+    }
+    
+
+    #M14 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+    
+    pre {
+        margin-left: -31%;
+    }
+
+    #wsu {
+        margin-top: 40%;
+        margin-left: -49%;
+    }
+
+    #kw {
+        margin-left: -38%;
+    }
+    #add {
+        height: 44vh;
+    }
+
+    #add1 {
+        height: 44vh;
+    }
+
+    #add2 {
+        height: 44vh;
+    }
+
+    #ad {
+        width: 48%;
+        bottom: 20%;
+        right: 19%;
+    }
+
+    #bu {
+        width: 48%;
+        left: 20%;
+
+    }
+
+    #adb {
+        width: 32%;
+        margin-top: 112%;
+        margin-left: 44%;
+    }
+    .l{
+        width: 62%;
+    }
+
+    #last {
+        
+        height: 83vh;
+        margin-top: 8%;
+        margin-left: 15%;
+    }
+
+    .footer {
+        height: 46vh;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    .bg {
+        height: 73vh;
+        width: 100%;
+    }
+#l{
+    display: none;
+}
+
+#si{
+    display: none;
+}
+    #kid {
+        left: 14%;
+    }
+
+    #ad {
+        bottom: 22%;
+    }
+
+    #bu {
+        bottom: 22%;
+    }
+
+    pre {
+        margin-left: -36%;
+    }
+
+    #add {
+        height: 40vh;
+    }
+
+    #add1 {
+        height: 40vh;
+    }
+
+    #add2 {
+        height: 40vh;
+    }
+
+    #wsu {
+        margin-top: 48%;
+        margin-left: -58%;
+    }
+
+    p {
+        width: 18%;
+    }
+
+    #last {
+        height: 75vh;
+    }
+
+    .l {
+        height: 93vh;
+    }
+
+    .fo {
+        margin-left: 4%;
+    }
+
+    h4 {
+        margin-left: 10%;
+    }
+
+    #list {
+        margin-left: -74%;
+    }
+}
+
+
+@media(max-width:950px) {
+    .bg{
+        height: 72vh;
+    }
+    .z{
+        width: 42%;
+    }
+    #kid {
+        left: 18%;
+    }
+
+    #women {
+        left: -1%;
+    }
+
+    #men {
+        left: -24%;
+    }
+
+    pre {
+        margin-left: -45%;
+    }
+
+    #ad {
+        bottom: 23%;
+    }
+
+    #bu {
+        bottom: 23%;
+    }
+
+    #wsu {
+        margin-top: 48%;
+        margin-left: -68%;
+    }
+
+    #kw {
+        margin-left: -51%;
+    }
+
+    #last {
+        height: 71vh;
+    }
+
+    .l {
+        height: 88vh;
+    }
+
+    .footer {
+        height: 51vh;
+    }
+
+    #list {
+        margin-left: -77%;
+    }
+}
+
+
+@media(Max-width:900px) {
+    nav {
+        height: 69px;
+        }
+    .bg {
+        height: 65vh;
+    }
+    .z {
+        width: 45%;
+    }
+    #b {
+        width: 15%;
+    }
+    .logo img {
+        margin-top: -7%;
+        margin-left: 1%;
+    }
+
+    #men {
+        height: 131px;
+        top: 39%;
+        left: -22%;
+    }
+
+    #women {
+        height: 131px;
+        left: 3%;
+        bottom: 14%;
+    }
+
+    #kid {
+        height: 131px;
+        left: 23%;
+        bottom: 51%;
+    }
+
+    p {
+        width: 20%;
+    }
+
+    pre {
+        font-size: 15px;
+        margin-left: -53%;
+    }
+
+    #ad {
+        right: 25%;
+        font-size: 7px;
+        bottom: 25%;
+    }
+
+    #bu {
+        left: 28%;
+        font-size: 7px;
+        bottom: 25%;
+    }
+
+    #add {
+        height: 36vh;
+    }
+
+    #add1 {
+        height: 36vh;
+    }
+
+    #add2 {
+        height: 36vh;
+    }
+
+    #wsu {
+        margin-top: 57%;
+        margin-left: -76%;
+    }
+
+    #kw {
+        margin-left: -66%;
+        margin-top: 6%;
+    }
+
+    #last {
+        height: 67vh;
+    }
+
+    .fo {
+        margin-left: -1%;
+    }
+
+    #list {
+        margin-left: -87%;
+    }
+}
+
+@media(max-width:850px) {
+    .bg {
+        height: 62vh;
+    }
+    .z {
+        width: 46%;
+    }
+    #men {
+        height: 125px;
+        top: 41%;
+        left: -21%;
+    }
+
+    #women {
+        height: 125px;
+        left: 7%;
+        bottom: 10%;
+    }
+
+    #kid {
+        height: 124px;
+        left: 27%;
+        bottom: 42%;
+    }
+
+    #M1 img {
+        margin-top: -16%;
+        margin-left: -7%;
+    }
+
+    pre {
+        font-size: 15px;
+        margin-left: -62%;
+    }
+
+    #wsu {
+        margin-top: 63%;
+        margin-left: -90%;
+    }
+
+    #kw {
+        margin-left: -81%;
+        margin-top: 6%;
+    }
+
+    .l {
+        height: 80vh;
+    }
+
+    #last {
+        height: 63vh;
+    }
+
+    .footer {
+        height: 53vh;
+    }
+
+    .fo {
+        margin-left: -7%;
+    }
+
+    #list {
+        margin-left: -105%;
+    }
+
+    .fo1 {
+        width: 73%;
+        font-size: 15px;
+    }
+
+    h4 {
+        margin-left: 10%;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:898px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        margin-left: 0px;
+        /* height: 60px; */
+
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    #find {
+        display: none;
+    }
+
+    .ri-search-line {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin-left: 10%;
+    }
+
+    nav ul li a {
+        margin-right: 60px;
+        font-size: 20px;
+        color: black;
+    }
+
+    nav ul li a:hover {
+        background: black;
+        color: white;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: black;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+
+
+@media(max-width:800px) {
+    #men {
+        height: 118px;
+        top: 31%;
+        left: -27%;
+    }
+
+    #women {
+        height: 117px;
+        left: -3%;
+        bottom: 28%;
+    }
+
+    #kid {
+        height: 124px;
+        left: 13%;
+        bottom: 74%;
+    }
+
+    .bg {
+        height: 57vh;
+        margin-top: 9%;
+    }
+    #my{
+        font-size: 55px;
+    }
+    span{
+        font-size: 36px;
+    }
+
+    .men {
+        height: 167vh;
+    }
+    p {
+        width: 30%;
+    }
+
+    #M1 img {
+        margin-top: -16%;
+        margin-left: 15%;
+    }
+
+    pre {
+        font-size: 15px;
+        margin-left: -21%;
+    }
+
+    #ad {
+        right: 15%;
+        font-size: 7px;
+        bottom: 17%;
+    }
+
+    #bu {
+        left: 17%;
+        font-size: 7px;
+        bottom: 17%;
+    }
+
+    h2 {
+        margin-top: 5%;
+        margin-left: 34%;
+    }
+
+    #add {
+        height: 48vh;
+    }
+
+    #add1 {
+        height: 48vh;
+    }
+
+    #add2 {
+        height: 48vh;
+    }
+
+    .f {
+        height: 126vh;
+    }
+
+    #wsu {
+        margin-top: 22%;
+        margin-left: -34%;
+    }
+
+    #M8 img {
+        margin-top: -1%;
+        margin-left: 15%;
+    }
+
+    #kw {
+        margin-left: -27%;
+        margin-top: -2%;
+    }
+
+    #last {
+        height: 59vh;
+    }
+
+    .l {
+        height: 77vh;
+    }
+
+    .footer {
+        height: 55vh;
+    }
+
+    .fo {
+        margin-left: 18%;
+    }
+
+    #lo {
+        margin-left: 56%;
+        margin-top: -37%;
+    }
+
+    h4 {
+        margin-left: -35%;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:750px) {
+    .bg {
+        height: 54vh;
+        margin-top: 10%;
+    }
+    .z {
+        width: 49%;
+    }
+    #b {
+        width: 19%;
+    }
+    #men {
+        height: 110px;
+        top: 32%;
+        left: -26%;
+    }
+
+    #women {
+        height: 108px;
+        left: -3%;
+        bottom: 26%;
+    }
+
+    #kid {
+        height: 107px;
+        left: 13%;
+        bottom: 66%;
+    }
+
+    #ad {
+        bottom: 19%;
+    }
+
+    #bu {
+        bottom: 19%;
+    }
+
+    #wsu {
+        margin-top: 25%;
+        margin-left: -42%;
+    }
+
+    p {
+        width: 31%;
+        margin-left: 38%;
+    }
+
+    .l {
+        margin-top: 4%;
+        height: 68vh;
+    }
+
+    #last {
+        height: 55vh;
+    }
+}
+
+
+
+@media(max-width:700px) {
+    .bg {
+        height: 50vh;
+    }
+    #my {
+        font-size: 47px;
+    }
+    span {
+        font-size: 33px;
+    }
+    #b{
+        margin-top: 16%;
+    }
+    #men {
+        height: 101px;
+    }
+
+    #women {
+        height: 101px;
+        left: -3%;
+        bottom: 26%;
+    }
+
+    #kid {
+        height: 101px;
+        left: 13%;
+        bottom: 66%;
+    }
+
+    pre {
+        font-size: 15px;
+        margin-left: -35%;
+    }
+
+    #ad {
+        bottom: 21%;
+        right: 17%;
+    }
+
+    #bu {
+        bottom: 21%;
+    }
+
+    #add {
+        height: 42vh;
+    }
+
+    #add1 {
+        height: 42vh;
+    }
+
+    #add2 {
+        height: 42vh;
+    }
+
+    #wsu {
+        margin-top: 30%;
+        margin-left: -54%;
+    }
+
+    #kw {
+        margin-left: -39%;
+        margin-top: 1%;
+    }
+
+    #last {
+        height: 51vh;
+    }
+
+    .l {
+        margin-top: 4%;
+        height: 63vh;
+    }
+
+    .footer {
+        height: 56vh;
+    }
+}
+
+@media(max-width:650px) {
+    .logo img {
+        margin-top: -10%;
+        margin-left: -2%;
+    }
+
+    .bg {
+        height: 46vh;
+    }
+    .z {
+        width: 53%;
+    }
+    #men {
+        height: 94px;
+    }
+
+    #women {
+        height: 94px;
+        left: -3%;
+        bottom: 28%;
+    }
+
+    #kid {
+        height: 94px;
+        left: 13%;
+        bottom: 72%;
+    }
+
+    pre {
+        font-size: 15px;
+        margin-left: -43%;
+    }
+
+    #ad {
+        bottom: 23%;
+        right: 20%;
+    }
+
+    #bu {
+        bottom: 23%;
+    }
+
+    #M1 img {
+        margin-top: -16%;
+        margin-left: 4%;
+    }
+
+    #add {
+        height: 40vh;
+    }
+
+    #add1 {
+        height: 40vh;
+    }
+
+    #add2 {
+        height: 40vh;
+    }
+
+    #add2 {
+        height: 40vh;
+        margin-left: 67%;
+    }
+
+    #wsu {
+        margin-top: 36%;
+        margin-left: -67%;
+    }
+
+    #kw {
+        margin-left: -49%;
+        margin-top: 3%;
+    }
+
+    #last {
+        height: 47vh;
+    }
+
+    .l {
+        margin-top: 4%;
+        height: 58vh;
+    }
+
+    .footer {
+        height: 57vh;
+    }
+
+    #list {
+        margin-left: -126%;
+    }
+
+    .fo1 {
+        margin-left: 37%;
+    }
+
+    #lo {
+        margin-left: 56%;
+        margin-top: -46%;
+    }
+}
+
+@media(max-width:600px) {
+    .bg {
+        height: 42vh;
+    }
+    #my {
+        font-size: 40px;
+    }
+    span {
+        font-size: 29px;
+    }
+    #b {
+        margin-top: 13%;
+        width: 23%
+    }
+
+    #men {
+        height: 86px;
+    }
+
+    #women {
+        height: 86px;
+        left: -4%;
+        bottom: 28%;
+    }
+
+    #kid {
+        height: 86px;
+        left: 12%;
+        bottom: 72%;
+    }
+
+    #M img {
+        margin-left: 6%;
+    }
+
+    #M3 img {
+        margin-left: 6%;
+    }
+
+    #M4 img {
+        margin-left: 6%;
+    }
+
+    #M5 img {
+        margin-left: 6%;
+    }
+
+    #M6 img {
+        margin-left: 6%;
+    }
+
+    #M7 img {
+        margin-left: 6%;
+    }
+
+    #M9 img {
+        margin-left: 6%;
+    }
+
+    #M10 img {
+        margin-left: 6%;
+    }
+
+    #M11 img {
+        margin-left: 6%;
+    }
+
+    #M12 img {
+        margin-left: 6%;
+    }
+
+    #M13 img {
+        margin-left: 6%;
+    }
+
+    #M14 img {
+        margin-left: 6%;
+    }
+
+    pre {
+        font-size: 15px;
+        margin-left: -45%;
+    }
+
+    #ad {
+        bottom: 25%;
+        right: 25%;
+    }
+
+    #bu {
+        bottom: 25%;
+        left: 26%;
+    }
+
+    h2 {
+        margin-top: 5%;
+        margin-left: 26%;
+    }
+
+    #add {
+        height: 37vh;
+    }
+
+    #add1 {
+        height: 37vh;
+    }
+
+    #add2 {
+        height: 37vh;
+    }
+
+    #wsu {
+        margin-top: 43%;
+        margin-left: -82%;
+    }
+
+    #kw {
+        margin-left: -69%;
+        margin-top: 3%;
+    }
+
+    #last {
+        height: 43vh;
+    }
+
+    .l {
+        margin-top: 4%;
+        height: 54vh;
+    }
+
+    #list {
+        margin-left: -140%;
+    }
+
+    #lo {
+        margin-left: 55%;
+        margin-top: -51%;
+    }
+}
+
+@media(max-width:550px) {
+    nav {
+        height: 66px;
+    }
+
+    .logo img {
+        margin-top: -12%;
+        margin-left: -2%;
+    }
+
+    .bg {
+        height: 38vh;
+    }
+    #my {
+        font-size: 31px;
+    }
+    span {
+        font-size: 24px;
+    }
+    #b {
+    margin-top: 11%;
+    width: 23%;
+}
+    .men {
+        height: 242vh;
+    }
+
+    #men {
+        height: 76px;
+    }
+
+    #women {
+        height: 76px;
+        left: -5%;
+        bottom: 27%;
+    }
+
+    #kid {
+        height: 76px;
+        left: 12%;
+        bottom: 74%;
+    }
+
+    p {
+        width: 37%;
+        margin-left: 33%;
+    }
+
+    .m {
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+    #M img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M1 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M2 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M3 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M4 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M5 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M6 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M7 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M8 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M9 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M10 img {
+        margin-left: 29%;
+        margin-top: 1%;
+    }
+
+    #M11 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M12 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M13 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    #M14 img {
+        margin-left: 29%;
+        margin-top: -8%;
+    }
+
+    pre {
+        font-size: 15px;
+        margin-left: 2%;
+    }
+
+    #ad {
+        width: 35%;
+        bottom: 23%;
+        right: 9%;
+    }
+
+    #bu {
+        width: 35%;
+        bottom: 23%;
+        left: 37%;
+
+    }
+
+    .f {
+        height: 215vh;
+    }
+
+    #add2 {
+        height: 63vh;
+        margin-left: 15%;
+    }
+
+    #add {
+        height: 63vh;
+    }
+
+    #add1 {
+        height: 63vh;
+    }
+
+    #wsu {
+        margin-top: 24%;
+        margin-left: -11%;
+    }
+
+    #kw {
+        margin-left: -3%;
+        margin-top: 9%;
+    }
+
+    #last {
+        height: 40vh;
+    }
+
+    .l {
+        margin-top: 6%;
+        height: 53vh;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    #list {
+        margin-left: -77%;
+    }
+
+    .fo1 {
+        margin-left: 20%;
+        margin-top: 13%;
+    }
+
+    #lo {
+        margin-left: 32%;
+        margin-top: -51%;
+    }
+}
+
+@media(max-width:500px) {
+    .bg {
+        height: 35vh;
+        margin-top: 15%;
+    }
+    .z {
+    width: 58%;
+}
+#b {
+    margin-top: 8%;
+    width: 25%;
+    font-size: 12px;
+}
+
+    #men {
+        height: 73px;
+        top: 37%;
+        left: -24%;
+    }
+
+    #women {
+        height: 73px;
+        left: 2%;
+        bottom: 19%;
+    }
+
+    #kid {
+        height: 73px;
+        left: 19%;
+        bottom: 58%;
+    }
+
+    #ad {
+        width: 35%;
+        bottom: 25%;
+        right: 10%;
+    }
+
+    #bu {
+        width: 35%;
+        bottom: 25%;
+        left: 39%;
+    }
+
+    #M1 img {
+        margin-left: 25%;
+        margin-top: -8%;
+    }
+
+    h2 {
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+
+    #wsu {
+        margin-top: 28%;
+        margin-left: -11%;
+    }
+
+    #M10 img {
+        margin-left: 27%;
+        margin-top: 2%;
+    }
+
+    #kw {
+        margin-left: -5%;
+        margin-top: 11%;
+    }
+
+    #M13 img {
+        margin-left: 29%;
+        margin-top: 2%;
+    }
+
+    #last {
+        height: 36vh;
+    }
+
+    .l {
+        margin-top: 6%;
+        height: 45vh;
+    }
+
+    #list {
+        margin-left: -79%;
+        font-size: 13px;
+    }
+
+    .fo img {
+        height: 26vh;
+        margin-left: 15%;
+    }
+
+    .fo1 {
+        margin-left: 15%;
+        margin-top: 13%;
+    }
+
+}
+
+@media(max-width:450px) {
+    .logo img {
+        margin-top: -15%;
+        margin-left: -3%;
+    }
+
+    .bg {
+        height: 31vh;
+        margin-top: 15%;
+    }
+    #my {
+        font-size: 25px;
+    }
+    span {
+        font-size: 20px;
+    }
+    #b {
+        height: 25px;
+    margin-top: 4%;
+    width: 23%;
+    font-size: 11px;
+}
+#b i {
+    margin-top: -4%;
+    font-size: 17px;
+    margin-left: -8%;
+}
+    
+    
+    nav {
+        height: 59px;
+    }
+    #men {
+        height: 64px;
+        top: 36%;
+        left: -24%;
+    }
+
+    #women {
+        height: 64px;
+        left: 2%;
+        bottom: 19%;
+    }
+
+    #kid {
+        height: 64px;
+        left: 19%;
+        bottom: 58%;
+    }
+
+    p {
+        width: 49%;
+        margin-left: 26%;
+    }
+
+    pre {
+        font-size: 15px;
+        margin-left: -8%;
+    }
+
+    #ad {
+        width: 35%;
+        bottom: 26%;
+        right: 11%;
+    }
+
+    #bu {
+        width: 35%;
+        bottom: 26%;
+        left: 41%;
+    }
+
+    h2 {
+        margin-top: 5%;
+        margin-left: 16%;
+    }
+
+    #add {
+        height: 53vh;
+    }
+
+    #add1 {
+        height: 53vh;
+    }
+
+    #add2 {
+        height: 53vh;
+    }
+
+    #wsu {
+        margin-top: 33%;
+        margin-left: -22%;
+    }
+
+    #kw {
+        margin-left: -13%;
+        margin-top: 12%;
+    }
+
+    #M13 img {
+        margin-left: 29%;
+        margin-top: 3%;
+    }
+
+    #last {
+        height: 32vh;
+    }
+
+    .l {
+        margin-top: 6%;
+        height: 40vh;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    #list {
+        margin-left: -82%;
+        font-size: 12px;
+    }
+
+    .fo1 {
+        margin-left: 12%;
+        margin-top: 13%;
+    }
+
+    #lo {
+        margin-left: 32%;
+        margin-top: -58%;
+    }
+}
+
+@media(max-width:400px) {
+    .logo img {
+        margin-top: -18%;
+        margin-left: -5%;
+    }
+
+    .bg {
+        height: 27vh;
+        margin-top: 17%;
+    }
+    .z {
+        width: 67%;
+    }
+    #b {
+        height: 21px;
+        margin-top: 2%;
+        width: 25%;
+        font-size: 10px;
+    }
+    #b i {
+    margin-top: -4%;
+    font-size: 15px;
+    margin-left: -8%;
+}
+
+
+    #men {
+        height: 56px;
+        top: 34%;
+        left: -25%;
+    }
+
+    #women {
+        height: 56px;
+        left: 1%;
+        bottom: 23%;
+    }
+
+    #kid {
+        height: 56px;
+        left: 17%;
+        bottom: 64%;
+    }
+    p {
+        width: 60%;
+        margin-left: 20%;
+    }
+    #M img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M1 img {
+        margin-top: -11%;
+        margin-left: 14%;
+    }
+
+    #M2 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M3 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M4 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M5 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M6 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M7 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M9 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M10 img {
+        margin-top: 5%;
+        margin-left: 23%;
+    }
+
+    #M11 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M12 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+
+    #M13 img {
+        margin-top: 4%;
+        margin-left: 23%;
+    }
+    #M14 img {
+        margin-top: -11%;
+        margin-left: 23%;
+    }
+    pre {
+        font-size: 15px;
+        margin-left: -21%;
+    }
+    h2 {
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    #add {
+        height: 46vh;
+    }
+
+    #add1 {
+        height: 46vh;
+    }
+    #add2 {
+        height: 46vh;
+    }
+    #wsu {
+        margin-top: 37%;
+        margin-left: -37%;
+    }
+    #kw {
+        margin-left: -24%;
+        margin-top: 16%;
+    }
+    #last {
+        height: 28vh;
+    }
+    .l {
+        margin-top: 6%;
+        height: 35vh;
+    }
+    .footer {
+        height: 51vh;
+    }
+    h5 {
+        font-size: 11px;
+    }
+    #list {
+        margin-left: -92%;
+        font-size: 12px;
+    }
+    #lo {
+        margin-left: 26%;
+        margin-top: -66%;
+    }
+    .fo1 {
+        width: 90%;
+        margin-left: 6%;
+    margin-top: 14%;
+    }
+}
+
+
+@media(max-width:350px){
+    .logo img {
+        margin-top: -21%;
+        margin-left: -8%;
+    }
+    .bg {
+        height: 23vh;
+        margin-top: 22%;
+    }
+    #my {
+    font-size: 20px;
+}
+span {
+    font-size: 15px;
+}
+#b {
+    height: 19px;
+    margin-top: -15%;
+    width: 26%;
+    font-size: 10px;
+}
+    #men {
+        height: 49px;
+        top: 34%;
+        left: -25%;
+    }
+    #women {
+        height: 49px;
+        left: 1%;
+        bottom: 23%;
+    }
+    #kid {
+        height: 49px;
+        left: 17%;
+        bottom: 64%;
+    }
+    #M img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M1 img {
+        margin-top: -16%;
+        margin-left: 5%;
+    }
+
+    #M2 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M3 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M4 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M5 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M6 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M7 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M9 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M10 img {
+        margin-top: 3%;
+        margin-left: 14%;
+    }
+    #M11 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M12 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    #M13 img {
+        margin-top: -16%;
+        margin-left: 16%;
+    }
+    pre {
+        font-size: 15px;
+        margin-left: -37%;
+    }
+    #ad {
+        width: 44%;
+        bottom: 23%;
+        right: 19%;
+    }
+    #bu {
+        width: 44%;
+        bottom: 23%;
+        left: 31%;
+    }
+    h2 {
+        margin-top: 5%;
+        margin-left: 15%;
+        font-size: 18px;
+    }
+    .f {
+    height: 160vh;
+}
+    #add {
+        height: 40vh;
+    }
+    
+    #add1 {
+        height: 40vh;
+    }
+    
+    #add2 {
+        height: 40vh;
+    }
+    p {
+        width: 69%;
+        margin-left: 16%;
+    }
+    #wsu {
+        margin-top: 40%;
+        margin-left: -59%;
+    }
+    #kw {
+        margin-left: -43%;
+        margin-top: 19%;
+    }
+    #M13 img {
+        margin-top: 4%;
+        margin-left: 16%;
+    }
+    #M14 img {
+        margin-top: -16%;
+        margin-left: 18%;
+    }
+    #last {
+        height: 24vh;
+    }
+    .l {
+        margin-top: 6%;
+        height: 30vh;
+    }
+    h4 {
+        margin-left: -46%;
+        width: 100%;
+        font-size: 11px;
+    }
+    #list {
+        margin-left: -118%;
+        font-size: 12px;
+    }
+    #lo {
+        height: 23vh;
+        margin-left: 26%;
+        margin-top: -78%;
+
+    }   
+    .fo1 {
+        width: 101%;
+        margin-left: 0%;
+        margin-top: 14%;
+    }
+    .fo1 a{
+        font-size: 33px;
+    }
+    #M6 img {
+        margin-top: -16%;
+        margin-left: 11%;
+    }
+    #M7 img {
+        margin-top: -16%;
+        margin-left: 11%;
+    }
+            
+}

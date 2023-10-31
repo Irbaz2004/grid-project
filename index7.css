@@ -1,0 +1,122 @@
+body{
+  /* background-color:rgba(90, 18, 78, 0.308); */
+background-image: url(https://www.hunarcourses.com/blog/wp-content/uploads/2020/01/title-image-5.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
+  }
+  
+  h1{
+    text-align: center;
+    color: #6b0652;
+  
+  }
+  form{
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    /* border: 1px solid black; */
+    margin-top: 5%;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+   
+  }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    height: 10vh;
+  /* width: 40%; */
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+
+@media(max-width:1040px){
+  button{
+    width: 17%;
+  }
+}
+@media(max-width:800px){
+  button{
+    width: 24%;
+  }
+}
+
+
+@media(max-width:550px){
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  form{
+    width: 100%;
+    margin-left: 0%;
+    margin-top:0%;
+  }
+}
